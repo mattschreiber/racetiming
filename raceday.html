@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+        name="description"
+        content="Timing operations information."
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>Racing Timing Manual</title>
+    </head>
+    <body>
+        <div class="container-fluid mb-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Race Timing</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Quick Start</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="raceday.html">Race Day Scoring</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="runsignup.html">Run Signup</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </nav>
+
+              <div>
+                <h1>RaceDay Scoring Menus</h1>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><img src="images/participant_icon.png"> Participants/Teams</div>
+                            <ol type="a">
+                                <li>
+                                    DQ runner
+                                </li>
+                                <li>
+                                    Update Event
+                                </li>
+                                <li>
+                                    Update Bib
+                                </li>
+                            </ol>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><img src="images/timing_location_icon.png"> Timing Locations</div>
+                            <ol type="a">
+                                <li>
+                                    Settings:
+                                    <ol type="i">
+                                        <li>
+                                            Consider start times until (latest start time).
+                                        </li>
+                                        <li>
+                                            Consider end times after (earliest finish time).
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><img src="images/scored_events_icon.png"> Scored Events</div>
+                            <ol type="a">
+                                <li>
+                                    Actual start time (Gun Time).
+                                </li>
+                            </ol>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><img src="images/age_group_icon.png"> Trophy: Age Groups Classifications</div>
+                            <ol type="a">
+                                <li>
+                                    Set top finishers.
+                                </li>
+                                <li>
+                                    Update age ranges. 
+                                    <ol type="i">
+                                        <li>
+                                            Clear all: maybe best solution if multiple age group changes are necessary.
+                                        </li>
+                                        <li>
+                                            Use range insert for mass updates. For example, changing age groups from every 5 years to every 10.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><img src="images/reports_icon.png"> Reports</div>
+                            <ol type="a">
+                                <li>
+                                    Actions -> Edit: to change columns.
+                                </li>
+                                <li>
+                                    <a href="#report-builder-img-modal" data-bs-toggle="modal">Build Report:</a> to create custom reports.
+                                   
+                                </li>
+                            </ol>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="report-builder-img-modal" aria-hidden="true" aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-xl" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <img src="images/report_builder.gif" alt="Report builder example">
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+    </html>

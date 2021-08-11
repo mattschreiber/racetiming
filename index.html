@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+        name="description"
+        content="Timing operations information."
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>Racing Timing Manual</title>
+    </head>
+    <body>
+        <div class="container-fluid mb-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Race Timing</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Quick Start</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="raceday.html">Race Day Scoring</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="runsignup.html">Run Signup</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </nav>
+            <div>
+                <h1>Racing Timing Checklist</h1>
+            </div>
+            <ol class="list-group list-group-numbered ">
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><a href="#controller-img-modal" data-bs-toggle="modal">Chronotrack Controllers</a> </div>
+                            <ol type="a">
+                                <li>
+                                    Turn on controllers and manually set time using time.gov.
+                                </li>
+                                <li>
+                                    Connect each controller via ethernet cable and broadcast time.
+                                </li>
+                                <li>
+                                    Verify Controllers are visible within Fusion when filtering for today's date. If controller does not show up
+                                    then reboot controller.
+                                </li>
+                                <li>
+                                    Lay mats with antennas.
+                                    <ol type="i">
+                                        <li>
+                                            Use short cords for mats 4 wide or less.
+                                        </li>
+                                        <li>
+                                            Connect Pro2 with mini controller via ethernet cable.
+                                        </li>
+                                        <li>
+                                            Setup Flash Points if required. The order of the cable connectors does not matter.
+                                        </li>
+                                        <li>
+                                            Check antennas are working using signal card in controller case.
+                                        </li>
+                                        <li>
+                                            Verfiy tag reads on the controller screen by using 999 tag.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"><a href="#fusion-img-modal" data-bs-toggle="modal">Fusion</a></div>
+                        <ol type="a">
+                            <li>
+                                Open Fusion and drag controllers onto streams. Mini controllers are not visible from Fusion. The Pro2 controller connected to the mini via ethernet cable is responsible for uploading tag reads for both boxes (minis do not support cellular).
+                            </li>
+                            <li>
+                                Expand the sessions drop down menu and click on the icon to verify reads are showing up in Fusion.
+                            </li>
+                            <li>
+                                Verify Local Log and RaceDay Scoring are checked under the output tabs.
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">RaceDay Scoring Application</div>
+                        <ol type="a">
+                            <li>
+                                Start Reads connector.
+                            </li>
+                            <li>
+                                Check data issues.
+                            </li>
+                            <li>
+                                Reports -> Actions -> Filters -> uncheck "Show Non-Starters" for each race.
+                            </li>
+                            <li>
+                                Reports -> Actions -> Edit -> remove unnecessary columns (usually split and gun time).
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start list-group-item">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Typical Race Scoring Tasks</div>
+                        <ol type="a">
+                            <li>
+                                Set gun time on controller.
+                            </li>
+                            <li>
+                                Begin playing results in Fusion
+                            </li>
+                            <li>
+                                Verfiy recent reads are showing up in Fusion
+                            </li>
+                            <li>
+                                Write down at least overall top 3 men and top 3 woman for each race distance.
+                            </li>
+                            <li>
+                                Resume report Auto-Saves in RaceDay Scoring.
+                            </li>
+                            <li>
+                                Verfiy results are showing up on Run Signup. Under Reports in RaceDay Scoring is the link for Live Results or you can find the race on Run Signup.
+                            </li>
+                            <li>
+                                Print Results.
+                            </li>
+                            <li>
+                                Check Raw Reads -> Ignored Reads for potential issues.
+                            </li>
+                            <li>
+                                Copy files from controllers to flash drive. RaceOps -> File Management -> Select Active.
+                            </li>
+                            <li>
+                                Export race from RaceDay Scoring and email it along with controller files to Ryan.
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+            </ol>
+
+
+            <div id="controller-img-modal" aria-hidden="true" aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-xl" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <img src="images/controller_main_screen.png" alt="Controller Home Screen">
+                </div>
+                </div>
+            </div>
+
+            <div id="fusion-img-modal" aria-hidden="true" aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-xl" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <video controls>
+                        <source src="videos/Fusion_Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+    </html>
