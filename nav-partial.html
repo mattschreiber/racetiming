@@ -1,0 +1,59 @@
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Race Timing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Quick Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="raceday.html">Race Day Scoring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="runsignup.html">Run Signup</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Fusion
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html#fusion-quickstart">Fusion Quick Start</a></li>
+              <li><a class="dropdown-item" href="fusion-part1.html">Fusion Episode 1</a></li>
+              <li><a class="dropdown-item" href="fusion-part2.html">Fusion Episode 2</a></li>
+              <li><a class="dropdown-item" href="fusion-part3.html">Fusion Episode 3</a></li>
+              <li><a class="dropdown-item" href="fusion-import.html">Fusion - Importing Files</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script>
+          // Adds active class to link for current page
+            let linkNumber = 0;
+            switch(window.location.pathname) {
+                case "/index.html":
+                    linkNumber = 1;
+                    break;
+                case "/raceday.html":
+                    linkNumber = 2;
+                    break;
+                case "/runsignup.html":
+                    linkNumber = 3;
+                    break;
+                case "/fusion-import.html":
+                    linkNumber = 4;
+                    break;
+                case "/fusion-part1.html":
+                    linkNumber = 4;
+                    break;
+                case "/fusion-part2.html":
+                    linkNumber = 4;
+                    break;
+                case "/fusion-part3.html":
+                    linkNumber = 4;
+                    break;
+            }
+          document.querySelector(".nav-item:nth-child(" + linkNumber +") a").classList.add("active");
+      </script>
+    </div>
