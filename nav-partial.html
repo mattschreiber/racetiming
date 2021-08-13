@@ -31,29 +31,20 @@
       <script>
           // Adds active class to link for current page
             let linkNumber = 0;
-            switch(window.location.pathname) {
-                case "/racetiming/index.html":
-                    linkNumber = 1;
-                    break;
-                case "/racetiming/raceday.html":
-                    linkNumber = 2;
-                    break;
-                case "/racetiming/runsignup.html":
-                    linkNumber = 3;
-                    break;
-                case "/racetiming/fusion-import.html":
-                    linkNumber = 4;
-                    break;
-                case "/racetiming/fusion-part1.html":
-                    linkNumber = 4;
-                    break;
-                case "/racetiming/fusion-part2.html":
-                    linkNumber = 4;
-                    break;
-                case "/racetiming/fusion-part3.html":
-                    linkNumber = 4;
-                    break;
+            let path = window.location.pathname;
+
+            if (path.includes("index.html")) {
+                linkNumber = 1;
+            } else if (path.includes("raceday.html")) {
+                linkNumber = 2;
+            } else if (path.includes("runsignup.html")) {
+                linkNumber = 3;
+            } else if (path.includes("fusion")) {
+                linkNumber =4;
+            } else {
+                console.log("The path was not found " + path);
             }
+
           document.querySelector(".nav-item:nth-child(" + linkNumber +") a").classList.add("active");
       </script>
     </div>
